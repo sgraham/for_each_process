@@ -1,0 +1,20 @@
+Windbg extension to execute a command for every process.
+
+Windbg already has
+
+  !for_each_frame
+  !for_each_function
+  !for_each_local
+  !for_each_module
+  !for_each_register
+
+For some reason !for_each_process and !for_each_thread are only available in
+kernel mode. This adds the trivial implementation of
+
+  !for_each_process
+
+which does what you would expect.
+
+
+Scott Graham
+scott.foreachprocess@h4ck3r.net
