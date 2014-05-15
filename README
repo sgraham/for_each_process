@@ -13,7 +13,13 @@ kernel mode. This adds the trivial implementation of
 
   !for_each_process
 
-which does what you would expect.
+To use it,
+
+  .load c:\path\to\for_each_process.dll
+
+then e.g.:
+
+  !for_each_process "bm something!MyFunction"
 
 
 Scott Graham
